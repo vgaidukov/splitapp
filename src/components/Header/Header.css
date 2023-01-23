@@ -1,0 +1,15 @@
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+}
+
+.logo {
+  height: 70%;
+}
+
+.title {
+  margin: 40px 0;
+  font-size: 36px;
+  color: blueviolet;
+}

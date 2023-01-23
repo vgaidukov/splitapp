@@ -1,0 +1,50 @@
+.image-container {
+  position: relative;
+}
+
+.mansTop {
+  position: absolute;
+  height: 93vh;
+  top: 1vh;
+  left: 40vw;
+}
+
+.mansHand {
+  position: absolute;
+  height: 9vh;
+  top: 19vh;
+  left: calc(40vw + .5vh);
+  transition: all linear .2s;
+}
+
+.shake-hand {
+  rotate: 30deg;
+  transform: translate(16px, -8px);
+}
+
+.mansLegs {
+  position: absolute;
+  width: 24.8vh;
+  top: 71vh;
+  left: calc(40vw + 13vh);
+}
+
+.mansBottom {
+  position: absolute;
+  height: 35.1vh;
+  top: 59vh;
+  left: 39.9vw;
+}
+
+.mansFoot {
+  position: absolute;
+  height: 6.7vh;
+  top: 87vh;
+  left: calc(40vw + 28.6vh);
+  transition: all linear .2s;
+}
+
+.shake-foot {
+  rotate: -18deg;
+  transform: translate(12px, -12px);
+}

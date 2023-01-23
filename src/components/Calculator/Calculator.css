@@ -1,0 +1,22 @@
+.calculator {
+  display: flex;
+  width: 100%;
+  min-height: 450px;
+}
+
+.items {
+  margin-right: 7px;
+  width: 54%;
+  display: flex;
+  background-color: hotpink;
+  border-radius: 40px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.participants {
+  display: flex;
+  flex: 1 1 auto;
+  background-color: plum;
+  border-radius: 40px;
+  box-shadow: 1px 1px 5px gray;
+}
