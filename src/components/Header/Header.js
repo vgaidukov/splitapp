@@ -4,8 +4,8 @@ function Header() {
 
   return (
     <header className="header">
-      <img src={logo} alt="" className="logo" />
-      <p className="title">SPLITAPP</p>
+      <img src={logo} alt="лого" className="header__logo" />
+      <p className="header__title">SPLITAPP</p>
     </header>
   );
 }

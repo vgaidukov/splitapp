@@ -8,12 +8,12 @@ import mansLegs from '../../images/mansLegs.png';
 function Image({ isMouseOn }) {
 
   return (
-    <div className="image-container">
-      <img src={mansTop} alt="выше пояса" className="mansTop" />
-      <img src={mansHand} alt="рука" className={`mansHand ${isMouseOn && "shake-hand"}`} />
-      <img src={mansLegs} alt="ноги" className="mansLegs" />
-      <img src={mansBottom} alt="ниже пояса" className="mansBottom" />
-      <img src={mansFoot} alt="ступня" className={`mansFoot ${isMouseOn && "shake-foot"}`} />
+    <div className="image">
+      <img src={mansTop} alt="выше пояса" className="image__mansTop" />
+      <img src={mansHand} alt="рука" className={`image__mansHand ${isMouseOn && "image__mansHand_shake"}`} />
+      <img src={mansLegs} alt="ноги" className="image__mansLegs" />
+      <img src={mansBottom} alt="ниже пояса" className="image__mansBottom" />
+      <img src={mansFoot} alt="ступня" className={`image__mansFoot ${isMouseOn && "image__mansFoot_shake"}`} />
     </div>
   );
 }

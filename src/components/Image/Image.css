@@ -1,15 +1,15 @@
-.image-container {
+.image {
   position: relative;
 }
 
-.mansTop {
+.image__mansTop {
   position: absolute;
   height: 93vh;
   top: 1vh;
   left: 40vw;
 }
 
-.mansHand {
+.image__mansHand {
   position: absolute;
   height: 9vh;
   top: 19vh;
@@ -17,26 +17,26 @@
   transition: all linear .2s;
 }
 
-.shake-hand {
+.image__mansHand_shake {
   rotate: 30deg;
   transform: translate(16px, -8px);
 }
 
-.mansLegs {
+.image__mansLegs {
   position: absolute;
   width: 24.8vh;
   top: 71vh;
   left: calc(40vw + 13vh);
 }
 
-.mansBottom {
+.image__mansBottom {
   position: absolute;
   height: 35.1vh;
   top: 59vh;
   left: 39.9vw;
 }
 
-.mansFoot {
+.image__mansFoot {
   position: absolute;
   height: 6.7vh;
   top: 87vh;
@@ -44,7 +44,7 @@
   transition: all linear .2s;
 }
 
-.shake-foot {
+.image__mansFoot_shake {
   rotate: -18deg;
   transform: translate(12px, -12px);
 }

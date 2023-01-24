@@ -4,12 +4,12 @@
   display: flex;
 }
 
-.logo {
-  height: 70%;
+.header__logo {
+  height: 60%;
 }
 
-.title {
-  margin-left: 10px;
+.header__title {
+  margin-left: 5px;
   font-size: 46px;
   color: #782cf6;
 
