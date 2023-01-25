@@ -1,11 +1,11 @@
 // import Items from '../Items/Items';
 import Participants from '../Participants/Participants';
 import './Calculator.css';
-import InitialData from './InitialData/InitialData';
+import InitialData from '../InitialData/InitialData';
 
 
 function Calculator({
-  trackMouse,
+  trackMouseOnCalc,
   participants,
   addParticipant,
   deleteParticipant,
@@ -13,7 +13,7 @@ function Calculator({
 }) {
 
   return (
-    <div className="calculator" onMouseEnter={trackMouse} onMouseLeave={trackMouse}>
+    <div className="calculator" onMouseEnter={trackMouseOnCalc} onMouseLeave={trackMouseOnCalc}>
       <InitialData />
       <Participants
         participants={participants}

@@ -9,8 +9,8 @@ import { ParticipantsContext } from '../../context/ParticipantsContext';
 
 function App() {
   const [widthIndex, setWidthIndex] = useState(2)
-  const [isMouseOn, setIsMouseOn] = useState(false);
-  const [isSpeaker, setIsSpeaker] = useState(false);
+  const [isMouseOnCalc, setIsMouseOnCalc] = useState(false);
+  const [isMouseOnTitle, setIsMouseOnTitle] = useState(false);
   const [participants, setParticipants] = useState([
     {
       name: "Участник 1",
@@ -22,23 +22,22 @@ function App() {
     }
   ]);
 
-  const trackMouse = () => {
-    setIsMouseOn(!isMouseOn);
+  const trackMouseOnCalc = () => {
+    setIsMouseOnCalc(!isMouseOnCalc);
+  }
+
+  const trackMouseOnTitle = () => {
+    setIsMouseOnTitle(!isMouseOnTitle);
   }
 
   const addParticipant = (participant) => {
     setWidthIndex(widthIndex + 1);
-    setIsSpeaker(true);
     setTimeout(() => {
       setParticipants([...participants, participant]);
     }, 200);
-    setTimeout(() => {
-      setIsSpeaker(false);
-    }, 500);
   }
 
   const deleteParticipant = (deletedId) => {
-    // console.log(participants.length);
     const newParticipants = participants.filter((el) => {
       return el.id.toString() !== deletedId;
     });
@@ -54,14 +53,17 @@ function App() {
       <div className="page">
         <div className="parallax">
           <div className="parallax-layer parallax-image">
-            <Image isMouseOn={isMouseOn} isSpeaker={isSpeaker} />
+            <Image
+              isMouseOnTitle={isMouseOnTitle}
+              isMouseOnCalc={isMouseOnCalc}
+            />
           </div>
           <div className="parallax-layer parallax-calculator">
             <div className="container">
-              <Header />
+              <Header trackMouseOnTitle={trackMouseOnTitle} />
               <Main>
                 <Calculator
-                  trackMouse={trackMouse}
+                  trackMouseOnCalc={trackMouseOnCalc}
                   participants={participants}
                   addParticipant={addParticipant}
                   deleteParticipant={deleteParticipant}

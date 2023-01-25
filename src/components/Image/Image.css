@@ -4,7 +4,6 @@
 
 .image__speaker {
   position: absolute;
-  /* height: 5.5vh; */
   z-index: 2;
 }
 
@@ -21,7 +20,7 @@
 
 
 .image__speaker_shake {
-  animation: play forwards .4s;
+  animation: play infinite .4s;
 }
 
 @keyframes play {
