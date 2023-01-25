@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import './Participant.css';
+import { ParticipantsContext } from "../../context/ParticipantsContext";
 
 function Participant({
   element,
@@ -7,6 +8,8 @@ function Participant({
 }) {
   const [isVisible, setIsVisible] = useState(false);
   const [toDelete, setToDelete] = useState(false);
+  const { participants } = useContext(ParticipantsContext);
+
 
   const handleMouseOver = () => {
     setIsVisible(true);
@@ -17,9 +20,13 @@ function Participant({
 
   const handleDelete = (e) => {
     e.preventDefault();
-    setToDelete(true);
-    const name = e.target.name;
-    deleteParticipant(name.slice(9));
+    if (participants.length > 2) {
+      setToDelete(true);
+      const name = e.target.name;
+      deleteParticipant(name.slice(9));
+    } else {
+      setIsVisible(false);
+    }
   }
 
   return (
@@ -33,7 +40,7 @@ function Participant({
         placeholder={element.name}
       />
       <div
-        className={`participant__delete ${isVisible && "participant__delete_visible"}`}
+        className={`participant__delete ${isVisible && (participants.length > 2) && "participant__delete_visible"}`}
       >
         <button
           className="participant__delete-button"
@@ -43,7 +50,7 @@ function Participant({
         >
         </button>
       </div>
-    </div>
+    </div >
   );
 }
 

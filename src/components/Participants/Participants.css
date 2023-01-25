@@ -48,9 +48,9 @@
   top: 13px;
   left: 4px;
   content: "";
-  width: 18px;
-  height: 0px;
-  border: 2px solid #782cf6;
+  width: 22px;
+  height: 4px;
+  background-color: #782cf6;
 }
 
 .participants__add-button::after {
@@ -59,7 +59,7 @@
   left: 4px;
   content: "";
   transform: rotate(90deg);
-  width: 18px;
-  height: 0px;
-  border: 2px solid #782cf6;
+  width: 22px;
+  height: 4px;
+  background-color: #782cf6;
 }

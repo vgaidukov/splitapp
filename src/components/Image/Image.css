@@ -2,6 +2,41 @@
   position: relative;
 }
 
+.image__speaker {
+  position: absolute;
+  /* height: 5.5vh; */
+  z-index: 2;
+}
+
+.image__speaker_left {
+  height: 5.2vh;
+  top: 13.2vh;
+  left: calc(40vw + 25vh);
+}
+.image__speaker_right {
+  height: 5.4vh;
+  top: 16.2vh;
+  left: calc(40vw + 37.5vh);
+}
+
+
+.image__speaker_shake {
+  animation: play forwards .4s;
+}
+
+@keyframes play {
+  0% {}
+  25% {scale: 1.1}
+  30% {scale: 1.15; }
+  35% {scale: 1}
+  50% {scale: 1.2}
+  75% {scale: 1.1}
+  77% {scale: 1.2}
+  80% {scale: 1.18}
+  90% {scale: 1.2}
+  100% {scale: 1.1}
+}
+
 .image__mansTop {
   position: absolute;
   height: 93vh;
