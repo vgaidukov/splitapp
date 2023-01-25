@@ -1,11 +1,27 @@
+// import Items from '../Items/Items';
+import Participants from '../Participants/Participants';
 import './Calculator.css';
+import InitialData from './InitialData/InitialData';
 
-function Calculator({ trackMouse }) {
+
+function Calculator({
+  trackMouse,
+  participants,
+  addParticipant,
+  deleteParticipant,
+  widthIndex,
+}) {
 
   return (
-    <div className="calculator" onMouseOver={trackMouse} onMouseOut={trackMouse}>
-      <div className="items"></div>
-      <div className="participants"></div>
+    <div className="calculator" onMouseEnter={trackMouse} onMouseLeave={trackMouse}>
+      <InitialData />
+      <Participants
+        participants={participants}
+        addParticipant={addParticipant}
+        deleteParticipant={deleteParticipant}
+        widthIndex={widthIndex}
+      />
+      {/* <Items /> */}
     </div>
   );
 }

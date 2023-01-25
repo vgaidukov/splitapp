@@ -1,0 +1,23 @@
+.initial-data {
+  margin-right: 7px;
+  /* width: 54%; */
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  column-gap: 3px;
+}
+
+.column {
+  height: 100%;
+  background-color: #eb539f;
+  border-radius: 40px;
+  box-shadow: 1px 1px 3px gray;
+}
+
+ .column__title {
+  margin: 25px 10px;
+  padding: 0;
+  max-width: 150px;
+
+  font-size: 18px;
+  text-align: center;
+}

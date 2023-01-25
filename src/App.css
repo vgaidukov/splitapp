@@ -3,6 +3,8 @@
 }
 
 .parallax {
+  padding: 0;
+  box-sizing: border-box;
   position: relative;
   perspective: 1px;
   height: 100vh;
@@ -16,17 +18,21 @@
 }
 
 .parallax-image {
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-2px) scale(2.96);
 }
 
 .parallax-calculator {
   transform: translateZ(0);
+  display: flex;
+  flex-direction: column;
+  width: 100%
+  ;
 }
 
 .container {
-  margin: 200px auto;
-  width: 70%;
+  margin: 15vh auto;
+  max-width: 95%;
   display: flex;
-  /* flex: 1 1 auto; */
   flex-direction: column;
+  justify-content: center;
 }
