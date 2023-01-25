@@ -1,6 +1,5 @@
 .initial-data {
   margin-right: 7px;
-  /* width: 54%; */
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 1fr));
   column-gap: 3px;
