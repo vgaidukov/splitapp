@@ -1,5 +1,5 @@
 # Split App
-The App helps you to calculate and split up spended money beetween your friend/participants.
+The App helps you to calculate and split up spended money beetween your friends/participants.
 
 ### Self-developed design  
 
