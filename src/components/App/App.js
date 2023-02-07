@@ -8,7 +8,6 @@ import Main from '../Main/Main';
 import { ParticipantsContext } from '../../context/ParticipantsContext';
 
 function App() {
-  const [widthIndex, setWidthIndex] = useState(2)
   const [isMouseOnCalc, setIsMouseOnCalc] = useState(false);
   const [isMouseOnTitle, setIsMouseOnTitle] = useState(false);
   const [participants, setParticipants] = useState([
@@ -31,20 +30,17 @@ function App() {
   }
 
   const addParticipant = (participant) => {
-    setWidthIndex(widthIndex + 1);
-    setTimeout(() => {
-      setParticipants([...participants, participant]);
-    }, 200);
+    setParticipants([...participants, participant]);
   }
 
   const deleteParticipant = (deletedId) => {
     const newParticipants = participants.filter((el) => {
       return el.id.toString() !== deletedId;
     });
+
     setTimeout(() => {
       setParticipants(newParticipants);
-      setWidthIndex(widthIndex - 1);
-    }, 500);
+    }, 600);
 
   }
 
@@ -67,7 +63,6 @@ function App() {
                   participants={participants}
                   addParticipant={addParticipant}
                   deleteParticipant={deleteParticipant}
-                  widthIndex={widthIndex}
                 />
               </Main>
             </div>

@@ -5,7 +5,6 @@ function Participants({
   participants,
   addParticipant,
   deleteParticipant,
-  widthIndex,
 }) {
   const handleAddClick = (e) => {
     e.preventDefault();
@@ -20,7 +19,7 @@ function Participants({
   }
 
   return (
-    <div className="participants" style={{ width: (70 + (97 * widthIndex)) }}>
+    <div className="participants">
       <h2 className="participants__title">Участники</h2>
       <div className="participants__header">
         <form className="participants__form">

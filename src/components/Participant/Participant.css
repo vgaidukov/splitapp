@@ -21,6 +21,7 @@
   100% {
     scale: 0;
     width: 0;
+    margin-right: 0;
   }
 }
 
@@ -43,12 +44,27 @@
 }
 
 .participant__name_new {
-  animation: appear .2s forwards;
+  animation: appear .5s forwards;
 }
 
-@keyframes appear {
+/* @keyframes appear {
   0% {scale: 0}
   100% {scale: 1;}
+} */
+
+@keyframes appear {
+  0% {
+    scale: 0;
+    width: 0;
+  }
+  70% {
+    scale: 0;
+    width: 90px;
+  }
+  100% {
+    scale: 1;
+    width: 90px;
+  }
 }
 
 .participant__name:focus {
