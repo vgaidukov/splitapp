@@ -33,3 +33,59 @@
   src: url('./Inter-Black.woff2') format('woff2'),
        url('./Inter-Black.woff') format('woff');
 }
+/* 
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('./MartianMono-ExtraBold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./MartianMono-SemiBold.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('./MartianMono-Medium.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./MartianMono-Regular.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./MartianMono-Light.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'MartianMono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('./MartianMono-Thin.woff2') format('woff2'),
+} */
+
+/* @font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('./Poppins-Regular.woff2') format('woff2'),
+} */
