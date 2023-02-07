@@ -1,12 +1,15 @@
 .participants {
+  margin-left: 4px;
   padding: 0 15px;
   display: flex;
   flex-direction: column;
   background-color: #782cf6;
   border-radius: 40px;
   box-shadow: 1px 1px 5px gray;
-  min-width: 100px;
+  /* min-width: 100px; */
   transition: all linear .1s;
+  grid-row: 1/-1;
+  grid-column: 4/5;
 }
 
 .participants__title {

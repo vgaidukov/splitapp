@@ -1,7 +1,8 @@
+import './Calculator.css';
 import Items from '../Items/Items';
 import Participants from '../Participants/Participants';
-import './Calculator.css';
 import InitialData from '../InitialData/InitialData';
+import Form from '../Form/Form';
 
 
 function Calculator({
@@ -20,6 +21,8 @@ function Calculator({
         deleteParticipant={deleteParticipant}
       />
       <Items />
+      {/* <Items /> */}
+      {/* <Form className="form" /> */}
     </div>
   );
 }

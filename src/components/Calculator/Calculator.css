@@ -1,7 +1,9 @@
 .calculator {
-  display: flex;
-  position: relative;
-  min-height: 450px;
+  display: grid;
+  grid-template-columns: repeat(3, 153px);
+  grid-template-rows: repeat(6, minmax(30px, min-content)); 
+  /* position: relative; */
+  /* min-height: 450px; */
 
   color: #FFF;
 }

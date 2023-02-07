@@ -5,17 +5,17 @@ function InitialData() {
   return (
     <div className="initial-data">
       <div className="column">
-        <h2 className="column__title">
+        <h2 className="column__title column__title_name">
           Наименование
         </h2>
       </div>
       <div className="column">
-        <h2 className="column__title">
+        <h2 className="column__title column__title_amount">
           Сумма
         </h2>
       </div>
       <div className="column">
-        <h2 className="column__title">
+        <h2 className="column__title column__title_paid">
           Оплата
         </h2>
       </div>
