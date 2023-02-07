@@ -1,4 +1,4 @@
-// import Items from '../Items/Items';
+import Items from '../Items/Items';
 import Participants from '../Participants/Participants';
 import './Calculator.css';
 import InitialData from '../InitialData/InitialData';
@@ -9,7 +9,6 @@ function Calculator({
   participants,
   addParticipant,
   deleteParticipant,
-  widthIndex,
 }) {
 
   return (
@@ -19,9 +18,8 @@ function Calculator({
         participants={participants}
         addParticipant={addParticipant}
         deleteParticipant={deleteParticipant}
-        widthIndex={widthIndex}
       />
-      {/* <Items /> */}
+      <Items />
     </div>
   );
 }
