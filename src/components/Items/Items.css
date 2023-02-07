@@ -1,18 +1,7 @@
 .items {
-  position: absolute;
-  margin: 100px 0 0 0;
+  margin: 100px 0 0 -15px;
   padding: 0;
-  width: 104%;
-  left: -2%;
-}
-
-.item {
-  display: flex;
-  border: 2px dashed #9cecde;
-  border-radius: 20px;
-  min-height: 30px;
-}
-.item__name {
-  padding: 0;
-  margin: 0 20px;
+  width: calc(100% + 15px);
+  grid-column: 1/5;
+  grid-row: 1/2;
 }
