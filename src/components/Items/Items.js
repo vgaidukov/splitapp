@@ -24,36 +24,6 @@ function Items() {
       },
       "id": 2,
     },
-    {
-      "name": "",
-      "amount": 2000,
-      "paid": "1",
-      "participants": {
-        "1": 500,
-        "2": 1500,
-      },
-      "id": 2,
-    },
-    {
-      "name": "",
-      "amount": 2000,
-      "paid": "1",
-      "participants": {
-        "1": 500,
-        "2": 1500,
-      },
-      "id": 2,
-    },
-    {
-      "name": "",
-      "amount": 2000,
-      "paid": "1",
-      "participants": {
-        "1": 500,
-        "2": 1500,
-      },
-      "id": 2,
-    },
   ];
 
   return (

@@ -1,6 +1,6 @@
 .item {
   margin-bottom: 3px;
-  min-height: 30px;
+  min-height: 35px;
   display: flex;
   /* min-width: 100%; */
   padding: 0 0 0 15px;
@@ -15,8 +15,8 @@
 }
 
 .item__column {
-  /* padding: 0; */
-  /* margin: 0 20px; */
+  padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   color: black;
