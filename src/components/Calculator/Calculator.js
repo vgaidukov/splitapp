@@ -22,7 +22,7 @@ function Calculator({
       />
       <Items />
       {/* <Items /> */}
-      {/* <Form className="form" /> */}
+      <Form className="form" />
     </div>
   );
 }
