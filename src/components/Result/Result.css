@@ -12,11 +12,7 @@
   margin-bottom: 10px;
 }
 
-.result__line {
-  margin-bottom: 3px;
-  padding: 0 15px;
-  width: 100%;
-  height: 35px;
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 150px) 19px repeat(2, 90px) 70px;
   column-gap: 3px;
@@ -25,8 +21,21 @@
   box-sizing: border-box;
 }
 
+.result__line {
+  margin-bottom: 3px;
+  padding: 0 15px;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
 .result__line_balance {
   background-color: rgba(190,190,190, .25);
+}
+
+.result__line_balance .result__title {
+  font-weight: 500;
 }
 
 .result__line_debt {

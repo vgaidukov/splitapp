@@ -2,10 +2,10 @@
   height: 90px;
   grid-row: 3/4;
   grid-column: 1/-1;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 150px) 16px repeat(2, 90px) 70px;
   column-gap: 3px;
-  align-items: center;
+  align-items: center; */
 }
 
 .total__element {
