@@ -2,7 +2,9 @@ import './Calculator.css';
 import Items from '../Items/Items';
 import Participants from '../Participants/Participants';
 import InitialData from '../InitialData/InitialData';
-import Form from '../Form/Form';
+import ItemForm from '../ItemForm/ItemForm';
+import Total from '../Total/Total';
+import Result from '../Result/Result';
 
 
 function Calculator({
@@ -20,9 +22,10 @@ function Calculator({
         addParticipant={addParticipant}
         deleteParticipant={deleteParticipant}
       />
-      <Items />
       {/* <Items /> */}
-      <Form className="form" />
+      <ItemForm />
+      <Total />
+      <Result />
     </div>
   );
 }

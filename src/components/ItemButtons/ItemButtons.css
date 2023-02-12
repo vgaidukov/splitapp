@@ -1,29 +1,29 @@
 .item__buttons {
   height: 100%;
   min-width: 17px;
-  display: flex;
   position: absolute;
   left: 100%;
   background-color: rgba(109,228,207, .7);
   border-radius: 0 20px 20px 0;
+  display: flex;
   box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
 }
 
 .item__button {
+  margin: 0;
+  padding: 0;
   display: flex;
   border: none;
   background: none;
-  padding: 0;
-  margin: 0;
 }
 
 .item__button-image {
   padding: 0;
-  display: flex;
   width: 0;
   height: 25px;
+  display: flex;
   border: none;
   border-radius: 50%;
   opacity: .8;
@@ -65,9 +65,3 @@
     width: 0;
   }
 }
-
-/* .item__button-image {
-  padding: 0;
-  margin: 0;
-  width: 0;
-} */

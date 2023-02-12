@@ -1,30 +1,11 @@
 import './Items.css';
 import '../List/List.css';
 import Item from '../Item/Item';
+import { useContext } from 'react';
+import { ParticipantsContext } from "../../context/ParticipantsContext";
 
 function Items() {
-  const items = [
-    {
-      "name": "",
-      "amount": 2000,
-      "paid": "1",
-      "participants": {
-        "1": 500,
-        "2": 1500,
-      },
-      "id": 1,
-    },
-    {
-      "name": "",
-      "amount": 2000,
-      "paid": "1",
-      "participants": {
-        "1": 500,
-        "2": 1500,
-      },
-      "id": 2,
-    },
-  ];
+  const { items } = useContext(ParticipantsContext);
 
   return (
     <ul className="items">

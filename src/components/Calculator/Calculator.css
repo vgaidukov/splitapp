@@ -1,9 +1,7 @@
 .calculator {
   display: grid;
   grid-template-columns: repeat(3, 153px);
-  grid-template-rows: repeat(6, minmax(37px, min-content)); 
-  /* position: relative; */
-  /* min-height: 450px; */
+  grid-template-rows: 90px repeat(5, min-content); 
 
   color: #FFF;
 }

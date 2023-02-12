@@ -8,7 +8,7 @@
   position: relative;
   perspective: 1px;
   height: 100vh;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .parallax-layer {
@@ -18,21 +18,19 @@
 }
 
 .parallax-image {
-  transform: translateZ(-2px) scale(2.96);
+  transform: translateZ(-1px) scale(2);
 }
 
 .parallax-calculator {
   transform: translateZ(0);
   display: flex;
   flex-direction: column;
-  width: 100%
-  ;
 }
 
 .container {
-  margin: 15vh auto;
+  margin: 17vh auto;
   max-width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-items: center;
 }

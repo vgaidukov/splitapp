@@ -3,22 +3,13 @@
   padding: 0;
   width: calc(100% + 30px);
   grid-column: 1/5;
-  grid-row: 4/5;
+  grid-row: 5/6;
   display: flex;
   flex-direction: column;
 }
 
 .result__container:first-of-type{
   margin-bottom: 10px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 150px) 19px repeat(2, 90px) 70px;
-  column-gap: 3px;
-  align-items: center;
-  border-radius: 20px;
-  box-sizing: border-box;
 }
 
 .result__line {
@@ -53,12 +44,4 @@
   font-size: 18px;
   line-height: 1.2;
   font-weight: 400;
-}
-
-.result__element {
-  margin: 0 4px 0 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  border: 1px black;
 }

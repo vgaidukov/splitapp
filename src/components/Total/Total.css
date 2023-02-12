@@ -1,11 +1,7 @@
 .total {
   height: 90px;
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 1/-1;
-  /* display: grid;
-  grid-template-columns: repeat(3, 150px) 16px repeat(2, 90px) 70px;
-  column-gap: 3px;
-  align-items: center; */
 }
 
 .total__element {
@@ -23,9 +19,4 @@
   grid-column: 2/3;
   margin: 0 15px;
   border-color: #782cf6;
-}
-
-.total__element_participant {
-  margin: 0 5px;
-  border-color: #eb539f;
 }

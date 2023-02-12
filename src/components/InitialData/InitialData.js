@@ -6,7 +6,7 @@ function InitialData() {
     <div className="initial-data">
       <div className="column">
         <h2 className="column__title column__title_name">
-          Наименование
+          Позиция
         </h2>
       </div>
       <div className="column">

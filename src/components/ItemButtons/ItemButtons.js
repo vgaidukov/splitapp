@@ -3,7 +3,6 @@ import editButton from '../../images/button-edit.png';
 import deleteButton from '../../images/button-delete.png';
 
 function ItemButtons({ isButtons }) {
-  console.log(isButtons);
 
   return (
     <div className="item__buttons item__buttons">
